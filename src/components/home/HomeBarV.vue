@@ -7,36 +7,29 @@
     <v-chart :force-fit="true" :height="height" :data="data" :scale="scale">
       <v-tooltip />
       <v-axis />
-      <v-line :position="'year*value'" />
-      <v-point :position="'year*value'" :shape="'circle'" />
+      <v-bar position="year*sales" />
     </v-chart>
   </el-card>
 </template>
 
 <script>
   const data = [
-    {year: '1991', value: 3},
-    {year: '1992', value: 4},
-    {year: '1993', value: 3.5},
-    {year: '1994', value: 5},
-    {year: '1995', value: 4.9},
-    {year: '1996', value: 6},
-    {year: '1997', value: 7},
-    {year: '1998', value: 9},
-    {year: '1999', value: 13},
+    {year: '1951 年', sales: 38},
+    {year: '1952 年', sales: 52},
+    {year: '1956 年', sales: 61},
+    {year: '1957 年', sales: 145},
+    {year: '1958 年', sales: 48},
+    {year: '1959 年', sales: 38},
+    {year: '1960 年', sales: 38},
+    {year: '1962 年', sales: 38},
   ];
 
   const scale = [{
-    dataKey: 'value',
-    min: 0,
-  }, {
-    dataKey: 'year',
-    min: 0,
-    max: 1,
+    dataKey: 'sales',
+    tickInterval: 20,
   }];
-
   export default {
-    name: "home-line",
+    name: "home-bar-v",
     data() {
       return {
         data,
@@ -44,7 +37,7 @@
         height: 400,
       };
     }
-  };
+  }
 </script>
 
 <style scoped>
