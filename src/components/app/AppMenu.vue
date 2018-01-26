@@ -14,6 +14,12 @@
           <router-link style="color: inherit;text-decoration: none;" to="table">Table 表格</router-link>
         </el-menu-item>
       </el-submenu>
+      <el-submenu index="1">
+        <template slot="title"><i class="el-icon-message"></i>Event</template>
+        <el-menu-item index="1-2">
+          <router-link style="color: inherit;text-decoration: none;" to="v-event">事件监听传递</router-link>
+        </el-menu-item>
+      </el-submenu>
     </el-menu>
   </div>
 </template>
