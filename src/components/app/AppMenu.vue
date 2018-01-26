@@ -14,10 +14,16 @@
           <router-link style="color: inherit;text-decoration: none;" to="table">Table 表格</router-link>
         </el-menu-item>
       </el-submenu>
-      <el-submenu index="1">
+      <el-submenu index="2">
         <template slot="title"><i class="el-icon-message"></i>Event</template>
-        <el-menu-item index="1-2">
+        <el-menu-item index="2-1">
           <router-link style="color: inherit;text-decoration: none;" to="v-event">事件监听传递</router-link>
+        </el-menu-item>
+      </el-submenu>
+      <el-submenu index="3">
+        <template slot="title"><i class="el-icon-edit"></i>表单</template>
+        <el-menu-item index="3-1">
+          <router-link style="color: inherit;text-decoration: none;" to="pvb-form">基础表单</router-link>
         </el-menu-item>
       </el-submenu>
     </el-menu>
