@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="event-main">
     <demo-parent />
     <demo-parent-m />
     <ve-sync />
@@ -22,6 +22,11 @@
 </script>
 
 <style scoped>
+  .event-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .box-card {
     margin-bottom: 15px;
     width: 300px;
