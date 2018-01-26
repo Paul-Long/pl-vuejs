@@ -1,10 +1,10 @@
 <template>
   <el-card class="box-card">
     <div slot="header" class="clearfix">
-      <span>通过 v-model 来进行双父子通信</span>
+      <span>模拟 v-model </span>
     </div>
     <demo-child v-model="value" :value="value" />
-    <div>{{value}}</div>
+    <div>parent-value : {{value}}</div>
   </el-card>
 </template>
 

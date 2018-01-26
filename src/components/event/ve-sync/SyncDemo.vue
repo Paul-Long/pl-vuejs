@@ -1,6 +1,8 @@
 <template>
   <div>
-    <el-button v-on:click.native="onClick">{{msg}}</el-button>
+    <el-button v-on:click.native="onAdd"><i class="el-icon-plus" /></el-button>
+    <el-button v-on:click.native="onMinus"><i class="el-icon-minus" /></el-button>
+    <div class="content">msg : {{msg}}</div>
   </div>
 </template>
 
@@ -9,13 +11,20 @@
     name: "sync-demo",
     props: ['msg'],
     methods: {
-      onClick() {
-        this.$emit('update:msg', 'msg已更新')
+      onAdd() {
+        this.$emit('update:msg', this.msg + 1)
+      },
+      onMinus() {
+        this.$emit('update:msg', this.msg - 1)
       }
     }
   }
 </script>
 
 <style scoped>
-
+  .content {
+    font-size: 28px;
+    line-height: 1.5;
+    padding-top: 30px;
+  }
 </style>

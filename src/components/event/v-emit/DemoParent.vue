@@ -15,12 +15,11 @@
     name: "demo-parent",
     data() {
       return {
-        msg: '首次数据传递'
+        msg: 0
       }
     },
     methods: {
       onChange(msg) {
-        console.log(msg);
         this.msg = msg;
       }
     }

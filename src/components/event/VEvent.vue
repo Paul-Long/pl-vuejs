@@ -22,5 +22,10 @@
 </script>
 
 <style scoped>
-
+  .box-card {
+    margin-bottom: 15px;
+    width: 300px;
+    display: inline-block;
+    height: 300px;
+  }
 </style>

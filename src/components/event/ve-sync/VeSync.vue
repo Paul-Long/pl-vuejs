@@ -1,7 +1,7 @@
 <template>
   <el-card class="box-card">
     <div slot="header" class="clearfix">
-      <span>通过 v-model 来进行双父子通信</span>
+      <span>通过 .sync 来进行双父子通信</span>
     </div>
     <sync-demo :msg.sync="msg" />
   </el-card>
@@ -15,7 +15,7 @@
     name: "ve-sync",
     data() {
       return {
-        msg: '首次数据传递'
+        msg: 0
       }
     }
   }

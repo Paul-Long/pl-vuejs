@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>{{value}}</div>
+    <div> child-value : {{value}}</div>
     <el-input v-bind:value="value" v-on:input="onInput" style="width: 200px;" />
   </div>
 </template>
