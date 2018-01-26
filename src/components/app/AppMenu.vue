@@ -10,27 +10,17 @@
              style="height: calc(100% - 60px); display: inline-block; text-align: left">
       <el-submenu index="1">
         <template slot="title"><i class="el-icon-message"></i>Data</template>
-        <el-menu-item index="1-1">
-          <pv-link title="Table 表格" to="table" />
-        </el-menu-item>
+        <pv-link index="1-1" title="Table 表格" to="table" />
       </el-submenu>
       <el-submenu index="2">
         <template slot="title"><i class="el-icon-message"></i>Event</template>
-        <el-menu-item index="2-1">
-          <pv-link title="事件监听传递" to="v-event" />
-        </el-menu-item>
+        <pv-link index="2-1" title="事件监听传递" to="v-event" />
       </el-submenu>
       <el-submenu index="3">
         <template slot="title"><i class="el-icon-edit"></i>表单</template>
-        <el-menu-item index="3-1">
-          <pv-link title="基础表单" to="pvb-form" />
-        </el-menu-item>
-        <el-menu-item index="3-2">
-          <pv-link title="行内表单" to="pvh-form" />
-        </el-menu-item>
-        <el-menu-item index="3-3">
-          <pv-link title="表单验证" to="pvv-form" />
-        </el-menu-item>
+        <pv-link index="3-1" title="基础表单" to="pvb-form" />
+        <pv-link index="3-2" title="行内表单" to="pvh-form" />
+        <pv-link index="3-3" title="表单验证" to="pvv-form" />
       </el-submenu>
     </el-menu>
   </div>
