@@ -25,6 +25,12 @@
         <el-menu-item index="3-1">
           <router-link style="color: inherit;text-decoration: none;" to="pvb-form">基础表单</router-link>
         </el-menu-item>
+        <el-menu-item index="3-2">
+          <router-link style="color: inherit;text-decoration: none;" to="pvh-form">行内表单</router-link>
+        </el-menu-item>
+        <el-menu-item index="3-3">
+          <router-link style="color: inherit;text-decoration: none;" to="pvv-form">表单验证</router-link>
+        </el-menu-item>
       </el-submenu>
     </el-menu>
   </div>
