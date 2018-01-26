@@ -11,25 +11,25 @@
       <el-submenu index="1">
         <template slot="title"><i class="el-icon-message"></i>Data</template>
         <el-menu-item index="1-1">
-          <router-link style="color: inherit;text-decoration: none;" to="table">Table 表格</router-link>
+          <pv-link title="Table 表格" to="table" />
         </el-menu-item>
       </el-submenu>
       <el-submenu index="2">
         <template slot="title"><i class="el-icon-message"></i>Event</template>
         <el-menu-item index="2-1">
-          <router-link style="color: inherit;text-decoration: none;" to="v-event">事件监听传递</router-link>
+          <pv-link title="事件监听传递" to="v-event" />
         </el-menu-item>
       </el-submenu>
       <el-submenu index="3">
         <template slot="title"><i class="el-icon-edit"></i>表单</template>
         <el-menu-item index="3-1">
-          <router-link style="color: inherit;text-decoration: none;" to="pvb-form">基础表单</router-link>
+          <pv-link title="基础表单" to="pvb-form" />
         </el-menu-item>
         <el-menu-item index="3-2">
-          <router-link style="color: inherit;text-decoration: none;" to="pvh-form">行内表单</router-link>
+          <pv-link title="行内表单" to="pvh-form" />
         </el-menu-item>
         <el-menu-item index="3-3">
-          <router-link style="color: inherit;text-decoration: none;" to="pvv-form">表单验证</router-link>
+          <pv-link title="表单验证" to="pvv-form" />
         </el-menu-item>
       </el-submenu>
     </el-menu>
@@ -37,7 +37,10 @@
 </template>
 
 <script>
+  import PvLink from '@/components/app/PvLink';
+
   export default {
+    components: {PvLink},
     name: "app-menu"
   }
 </script>
